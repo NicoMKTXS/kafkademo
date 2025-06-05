@@ -1,0 +1,23 @@
+{
+  "namespace": "messaging.dto",
+  "type": "record",
+  "name": "Product",
+  "fields": [
+    {
+      "name": "productId",
+      "type": "int"
+    },
+    {
+      "name": "productName",
+      "type": "string"
+    },
+    {
+      "name": "price",
+      "type": "float"
+    },
+    {
+      "name": "quantity",
+      "type": "int"
+    }
+  ]
+}
