@@ -3,21 +3,19 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package messaging.dto;
+package avro.messaging.dto;
 
-import org.apache.avro.generic.GenericArray;
-import org.apache.avro.specific.SpecificData;
-import org.apache.avro.util.Utf8;
-import org.apache.avro.message.BinaryMessageEncoder;
 import org.apache.avro.message.BinaryMessageDecoder;
+import org.apache.avro.message.BinaryMessageEncoder;
 import org.apache.avro.message.SchemaStore;
+import org.apache.avro.specific.SpecificData;
 
 @org.apache.avro.specific.AvroGenerated
 public class Product extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -2826542065692458342L;
+  private static final long serialVersionUID = -8032226066344230409L;
 
 
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Product\",\"namespace\":\"messaging.dto\",\"fields\":[{\"name\":\"productId\",\"type\":\"int\"},{\"name\":\"productName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"price\",\"type\":\"float\"},{\"name\":\"quantity\",\"type\":\"int\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Product\",\"namespace\":\"avro.messaging.dto\",\"fields\":[{\"name\":\"productId\",\"type\":\"int\"},{\"name\":\"productName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"price\",\"type\":\"float\"},{\"name\":\"quantity\",\"type\":\"int\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static final SpecificData MODEL$ = new SpecificData();
@@ -202,8 +200,8 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
    * Creates a new Product RecordBuilder.
    * @return A new Product RecordBuilder
    */
-  public static messaging.dto.Product.Builder newBuilder() {
-    return new messaging.dto.Product.Builder();
+  public static avro.messaging.dto.Product.Builder newBuilder() {
+    return new avro.messaging.dto.Product.Builder();
   }
 
   /**
@@ -211,11 +209,11 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param other The existing builder to copy.
    * @return A new Product RecordBuilder
    */
-  public static messaging.dto.Product.Builder newBuilder(messaging.dto.Product.Builder other) {
+  public static avro.messaging.dto.Product.Builder newBuilder(avro.messaging.dto.Product.Builder other) {
     if (other == null) {
-      return new messaging.dto.Product.Builder();
+      return new avro.messaging.dto.Product.Builder();
     } else {
-      return new messaging.dto.Product.Builder(other);
+      return new avro.messaging.dto.Product.Builder(other);
     }
   }
 
@@ -224,11 +222,11 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param other The existing instance to copy.
    * @return A new Product RecordBuilder
    */
-  public static messaging.dto.Product.Builder newBuilder(messaging.dto.Product other) {
+  public static avro.messaging.dto.Product.Builder newBuilder(avro.messaging.dto.Product other) {
     if (other == null) {
-      return new messaging.dto.Product.Builder();
+      return new avro.messaging.dto.Product.Builder();
     } else {
-      return new messaging.dto.Product.Builder(other);
+      return new avro.messaging.dto.Product.Builder(other);
     }
   }
 
@@ -253,7 +251,7 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(messaging.dto.Product.Builder other) {
+    private Builder(avro.messaging.dto.Product.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.productId)) {
         this.productId = data().deepCopy(fields()[0].schema(), other.productId);
@@ -277,7 +275,7 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
      * Creates a Builder by copying an existing Product instance
      * @param other The existing instance to copy.
      */
-    private Builder(messaging.dto.Product other) {
+    private Builder(avro.messaging.dto.Product other) {
       super(SCHEMA$, MODEL$);
       if (isValidValue(fields()[0], other.productId)) {
         this.productId = data().deepCopy(fields()[0].schema(), other.productId);
@@ -311,7 +309,7 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'productId'.
       * @return This builder.
       */
-    public messaging.dto.Product.Builder setProductId(int value) {
+    public avro.messaging.dto.Product.Builder setProductId(int value) {
       validate(fields()[0], value);
       this.productId = value;
       fieldSetFlags()[0] = true;
@@ -331,7 +329,7 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'productId' field.
       * @return This builder.
       */
-    public messaging.dto.Product.Builder clearProductId() {
+    public avro.messaging.dto.Product.Builder clearProductId() {
       fieldSetFlags()[0] = false;
       return this;
     }
@@ -350,7 +348,7 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'productName'.
       * @return This builder.
       */
-    public messaging.dto.Product.Builder setProductName(java.lang.String value) {
+    public avro.messaging.dto.Product.Builder setProductName(java.lang.String value) {
       validate(fields()[1], value);
       this.productName = value;
       fieldSetFlags()[1] = true;
@@ -370,7 +368,7 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'productName' field.
       * @return This builder.
       */
-    public messaging.dto.Product.Builder clearProductName() {
+    public avro.messaging.dto.Product.Builder clearProductName() {
       productName = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -390,7 +388,7 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'price'.
       * @return This builder.
       */
-    public messaging.dto.Product.Builder setPrice(float value) {
+    public avro.messaging.dto.Product.Builder setPrice(float value) {
       validate(fields()[2], value);
       this.price = value;
       fieldSetFlags()[2] = true;
@@ -410,7 +408,7 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'price' field.
       * @return This builder.
       */
-    public messaging.dto.Product.Builder clearPrice() {
+    public avro.messaging.dto.Product.Builder clearPrice() {
       fieldSetFlags()[2] = false;
       return this;
     }
@@ -429,7 +427,7 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'quantity'.
       * @return This builder.
       */
-    public messaging.dto.Product.Builder setQuantity(int value) {
+    public avro.messaging.dto.Product.Builder setQuantity(int value) {
       validate(fields()[3], value);
       this.quantity = value;
       fieldSetFlags()[3] = true;
@@ -449,7 +447,7 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'quantity' field.
       * @return This builder.
       */
-    public messaging.dto.Product.Builder clearQuantity() {
+    public avro.messaging.dto.Product.Builder clearQuantity() {
       fieldSetFlags()[3] = false;
       return this;
     }

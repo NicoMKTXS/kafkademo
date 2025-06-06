@@ -1,7 +1,7 @@
-package messaging.configuration;
+package avro.messaging.configuration;
 
-import messaging.configuration.data.KafkaConfigData;
-import messaging.configuration.data.KafkaProducerConfigData;
+import avro.messaging.configuration.data.KafkaConfigData;
+import avro.messaging.configuration.data.KafkaProducerConfigData;
 import org.apache.avro.specific.SpecificRecordBase;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.springframework.context.annotation.Bean;

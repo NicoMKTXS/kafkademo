@@ -1,4 +1,4 @@
-package messaging.consumer;
+package avro.messaging.consumer;
 
 import org.apache.avro.specific.SpecificRecordBase;
 
