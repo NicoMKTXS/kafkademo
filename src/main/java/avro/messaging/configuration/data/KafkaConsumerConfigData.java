@@ -1,4 +1,4 @@
-package messaging.configuration.data;
+package avro.messaging.configuration.data;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

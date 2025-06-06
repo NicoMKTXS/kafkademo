@@ -1,4 +1,4 @@
-package messaging.producer;
+package avro.messaging.producer;
 
 import org.apache.avro.specific.SpecificRecordBase;
 import org.springframework.kafka.support.SendResult;

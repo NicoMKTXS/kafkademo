@@ -1,5 +1,5 @@
 {
-  "namespace": "messaging.dto",
+  "namespace": "avro.messaging.dto",
   "type": "record",
   "name": "Product",
   "fields": [
