@@ -37,3 +37,6 @@ kafka-consumer-config:
   max-partition-fetch-bytes-boost-factor: 1
   poll-timeout-ms: 150
   product-created-consumer-group-id: product-created-event-topic-consumer
+
+server:
+  port: 8080
